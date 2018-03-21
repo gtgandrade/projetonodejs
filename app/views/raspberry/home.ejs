@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1>Home</h1>
+    <script src="/socket.io/socket.io.js"></script>
+    <script> 
+        var socket = io();
+        socket.on('ligado', function(){
+           alert("LED acionado");
+        });
+
+        socket.on('desligado', function(){
+           alert("LED foi desligado");
+        });
+    </script>
+    </body>
+</html>
